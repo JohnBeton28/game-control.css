@@ -6,16 +6,17 @@
 
 /* 1. DEZE MAG JE ZIEN (Domein 1) */
 /* We zetten deze op 'block' om hem te forceren */
-[class*="1-sociaal-domein"]
+[class*="1-sociaal-domein"],
+[class*="2-mentaal-domein"],
+[class*="3-fysiek-domein"],
+[class*="4-emotioneel-domein"],
+[class*="5-spiritueel-domein"]
  {
     display: block !important;
 }
 
 /* 2. DEZE MOETEN WEG (Domein 2 t/m 5) */
 
-[class*="2-mentaal-domein"],
-[class*="3-fysiek-domein"],
-[class*="4-emotioneel-domein"],
-[class*="5-spiritueel-domein"] {
+ {
     display: none !important;
 }

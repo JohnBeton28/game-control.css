@@ -1,22 +1,9 @@
-/* === KILL SWITCH MET CIJFERS === */
+/* === TOTAL BLACKOUT === */
 
-/* We gebruiken een 'Attribute Selector' om de cijfer-regel te omzeilen */
-
-/* === SPEL FASE 1: SOCIAAL DOMEIN === */
-
-/* 1. DEZE MAG JE ZIEN (Domein 1) */
-/* We zetten deze op 'block' om hem te forceren */
-[class*="1-sociaal-domein"],
-[class*="2-mentaal-domein"],
-[class*="3-fysiek-domein"],
-[class*="4-emotioneel-domein"],
-[class*="5-spiritueel-domein"]
- {
-    display: block !important;
-}
-
-/* 2. DEZE MOETEN WEG (Domein 2 t/m 5) */
-
- {
+.sociaal-domein,
+.mentaal-domein,
+.fysiek-domein,
+.emotioneel-domein,
+.spiritueel-domein {
     display: none !important;
 }

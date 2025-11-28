@@ -1,0 +1,18 @@
+<script>
+(function() {
+    // JOUW REMOTE CONTROL LINK:
+    const cssLink = 'https://raw.githubusercontent.com/JohnBeton28/game-control.css/main/game-control.css';
+    
+    // Cache Buster (Zorgt dat je direct kan schakelen)
+    const url = cssLink + '?t=' + new Date().getTime();
+
+    fetch(url)
+    .then(response => response.text())
+    .then(css => {
+        const style = document.createElement('style');
+        style.textContent = css;
+        document.head.appendChild(style);
+    })
+    .catch(err => console.log('Game Control Error', err));
+})();
+</script>
